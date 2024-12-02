@@ -2,7 +2,7 @@ import tkinter as tk
 from tkinter import messagebox
 
 class Notes:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.text_area = tk.Text(root, height=10, width=50, font=("Arial", 14))
         self.text_area.pack(pady=20)
