@@ -1,7 +1,7 @@
 import tkinter as tk
 
 class Calculator:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.result = tk.Entry(root, font=("Arial", 20), bd=10, relief="sunken", width=14, justify="right")
         self.result.grid(row=0, column=0, columnspan=4)

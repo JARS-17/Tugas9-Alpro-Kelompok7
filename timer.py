@@ -3,7 +3,7 @@ import time
 import threading
 
 class Timer:
-    def _init_(self, root):
+    def __init__(self, root):
         self.root = root
         self.time_left = 0
         self.is_running = False
@@ -33,4 +33,3 @@ class Timer:
             threading.Thread(target=self.countdown).start()
         except ValueError:
             self.label.config(text="Enter a valid number")
-#donelekku
